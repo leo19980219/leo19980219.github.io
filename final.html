@@ -14,7 +14,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Comming soon...</h1>
+						<h1>Exercise Recorder</h1>
 						<p>This is final project of Signal and System.</p>
 					</header>
 
@@ -24,11 +24,48 @@
 						<!-- Content -->
 							<section id="content" class="main">
 								
-								<h2>Magna feugiat lorem</h2>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
-								<p>Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Consequat leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit enim turpis lorem ipsum dolor sit amet feugiat. Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet est velit quis lorem.</p>
-								<h2>Tempus veroeros</h2>
-								<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
+								<h2>Introduction</h2>
+								<p>This project combined Matlab with Matlab mobile which has powerful and convenient sensor system. In this app, I took advantage of "Position" sensor. With Matlab mobile, it is extremely easy to store the sensor data and access from the Matlab Driver if using MathWorks Cloud as develoment envrinment. <br><br>
+								In this app, you can see your exercise path in a map as well as average speed, movement distance and exercise duration. I record my own exercise for example, walking from NTPU libraby to youbike station ,and riding the bicycle in the campus. They are all clearly showed in demo video and the below picture.</p>
+								<span class="image fit"><img src="images/final.jpg" alt="" /></span>
+
+								<h2>Tools & Envrinment</h2>
+								<p>Collect Data Using Matlab Mobile IOS<br>Develope Using MathWorks Cloud<br>Store Data in Matlab Drive</p>
+
+								<h2>Demo</h2>
+								<p><b>Step1: Collect data by Matlab Mobile.</b><br>
+								   Open Matlab Mobile and switch to "sensor" page.<br>
+								   Select "Stream to log" and "Sample rate 10.0Hz".<br>
+								   Remeber to enable "Position".<br>
+								   Press "START" to create your own record, you can also name your record whatever you like.
+								</p>
+								<span class="image left"><img src="images/cellphone1.jpg" alt="" /></span>
+								<span class="image left"><img src="images/cellphone2.jpg" alt="" /></span>
+
+								<p><b>Step2: Open Matlab APP.</b><br>
+								   In APP, you can type which record you want to see.<br>
+								   Press "Start" to see the result.
+								</p>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/GtYDcOTKSVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								<h2>Code</h2>
+								<p><b>1. "Start" callback</b><br>This  is  main  part  of  the  entire  code  that  get  filename  from  edit  text  first,  then apply the following functions to display information on APP user interface</p>
+								<script src="https://gist.github.com/leo19980219/7826510dcfa3be667cf2db2a626f0d7a.js"></script>
+
+								<p><b>2. Function: count average speed</b></p>
+								<script src="https://gist.github.com/leo19980219/9a71ab1552b0b955b15d45e1962fef6b.js"></script>
+
+								<p><b>3. Function: count the vertical movement</b></p>
+								<script src="https://gist.github.com/leo19980219/45ec7dc0524f1f860238c0a6eaee758f.js"></script>
+
+								<p><b>4. Function: count the exercise distance</b></p>
+								<script src="https://gist.github.com/leo19980219/f5e5a22f8cd2e2a65b5ee5645652268a.js"></script>
+
+								<p><b>5. Function: count the exercise duration</b></p>
+								<script src="https://gist.github.com/leo19980219/33b380e1f1cf71c214e0844b30360df5.js"></script>
+
+								<p><b>6. Function: display map and the path</b></p>
+								<script src="https://gist.github.com/leo19980219/14abda93b18ee80ca4a260ee6de63c65.js"></script>
 							</section>
 
 					</div>
